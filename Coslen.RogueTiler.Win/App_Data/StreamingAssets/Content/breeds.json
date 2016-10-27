@@ -1,0 +1,758 @@
+[  
+   {  
+      "Name":"garden spider",
+      "Glyph":"a",
+      "Colour": "DarkAqua",
+      "MaxHealth": 2,      
+      "Attacks":[  
+         {  
+            "Verb": "bite[s]",
+            "BaseDamage": 2.0
+         }
+      ],
+      "Drops": [
+      	{  
+            "chance": 3,
+            "Name": "Stinger"            
+        }
+      ],
+      "Tracking":10,
+      "Meander":8,
+      "Speed":0,      
+      "Flags":[ "fearless", "group" ],
+      "Slug": "Spider_Giant"
+   },
+   { 
+      "Name":"brown spider",
+      "Glyph":"a",
+      "Colour": "Brown",
+      "Attacks":[  
+         {  
+            "Verb":"bite[s]",
+            "BaseDamage":15.0,
+            "Element":8
+         }
+      ],
+      "MaxHealth":1,
+      "Tracking":10,
+      "Meander":8,
+      "Speed":0,
+      "Drop":[
+      		{ 
+            "Chance":5,
+          	"Name":"Stinger"
+          }
+         ],
+      "Flags":["fearless"],
+      "Slug": "Spider_Giant"
+   },
+   { 
+      "Name":"giant spider",
+      "Glyph":"a",
+      "Colour": "DarkBlue",
+      "Attacks":[  
+         {  
+            "Verb":"bite[s]",
+            "BaseDamage":5.0,
+            "Element":8
+         }
+      ],
+      "MaxHealth":20,
+      "Tracking":10,
+      "Meander":5,
+      "Speed":0,
+      "Drop":[  
+            {  
+               "Chance":10,
+               "Name":"Stinger"
+            }
+         ],
+      "Flags":[ "fearless"  ],
+      "Slug": "Spider_Giant"
+   },
+   { 
+      "Name":"brown bat",
+      "Glyph":"b",
+      "Colour": "LightBrown",
+      "Attacks":[  
+         {  
+            "Verb":"bite[s]",
+            "BaseDamage":4.0,
+            "Element":0
+         }
+      ],
+      "MaxHealth":9,
+      "Tracking":10,
+      "Meander":6,
+      "Speed":2,
+      "Drop":[],
+      "Flags":[],
+      "Slug": "Bat_Giant"
+   },
+   { 
+      "Name":"giant bat",
+      "Glyph":"b",
+      "Colour": "LightBrown",
+      "Attacks":[  
+         {  
+            "Verb":"bite[s]",
+            "BaseDamage":6.0,
+            "Element":0
+         }
+      ],
+      "MaxHealth":16,
+      "Tracking":10,
+      "Meander":4,
+      "Speed":2,
+      "Drop":[],
+      "Flags":[],
+      "Slug": "Bat_Giant"
+   },
+   { 
+      "Name":"cave bat",
+      "Glyph":"b",
+      "Colour": "Gray",
+      "Attacks":[  
+         {  
+            "Verb":"bite[s]",
+            "BaseDamage":6.0,
+            "Element":0
+         }
+      ],
+      "MaxHealth":10,
+      "Tracking":10,
+      "Meander":3,
+      "Speed":3,
+      "Drop":[],
+      "Flags":["group"],
+      "Slug": "Bat_Giant"
+   },
+   { 
+      "Name":"robin",
+      "Glyph":"B",
+      "Colour": "LightRed",
+      "Attacks":[  
+         {  
+            "Verb":"claws[s]",
+            "BaseDamage":1.0,
+            "Element":0
+         }
+      ],
+      "MaxHealth":3,
+      "Tracking":10,
+      "Meander":4,
+      "Speed":2,
+      "Drop":[  
+            {  
+               "Chance":25,
+               "Name":"Red Feather"
+            }
+         ],
+      "Flags":[],
+      "Slug": "Raven"
+   },
+   { 
+      "Name":"crow",
+      "Glyph":"B",
+      "Colour": "DarkGray",
+      "Attacks":[  
+         {  
+            "Verb":"bite[s]",
+            "BaseDamage":5.0,
+            "Element":0
+         }
+      ],
+      "MaxHealth":9,
+      "Tracking":10,
+      "Meander":4,
+      "Speed":2,
+      "Drop":[  
+            {  
+               "Chance":25,
+               "Name":"Black Feather"
+            }
+         ],
+      "Flags":["group"],
+      "Slug": "Raven"
+   },
+   { 
+      "Name":"raven",
+      "Glyph":"B",
+      "Colour": "Gray",
+      "Attacks":[  
+         {  
+            "Verb":"bite[s]",
+            "BaseDamage":5.0,
+            "Element":0
+         },
+         {  
+            "Verb":"claw[s]",
+            "BaseDamage":4.0,
+            "Element":0
+         }
+      ],
+      "MaxHealth":12,
+      "Tracking":10,
+      "Meander":1,
+      "Speed":0,
+      "Drop":[  
+            {  
+               "Chance":20,
+               "Name":"Black Feather"
+            }
+         ],
+      "Flags":["protective"],
+      "Slug": "Raven"
+   },
+   { 
+      "Name":"mangy cur",
+      "Glyph":"c",
+      "Colour": "Yellow",
+      "Attacks":[  
+         {  
+            "Verb":"bite[s]",
+            "BaseDamage":4.0,
+            "Element":0
+         }
+      ],
+      "MaxHealth":11,
+      "Tracking":20,
+      "Meander":3,
+      "Speed":0,
+      "Drop":[  
+            {  
+               "Chance":20,
+               "Name":"Fur Pelt"
+            }
+         ],
+      "Flags":["few"],
+      "Slug": "Dog"
+   },
+   { 
+      "Name":"wild dog",
+      "Glyph":"c",
+      "Colour": "Gray",
+      "Attacks":[  
+         {  
+            "Verb":"bite[s]",
+            "BaseDamage":4.0,
+            "Element":0
+         }
+      ],
+      "MaxHealth":16,
+      "Tracking":20,
+      "Meander":3,
+      "Speed":0,
+      "Drop":[  
+            {  
+               "Chance":20,
+               "Name":"Fur Pelt"
+            }
+         ],
+      "Flags":["few"],
+      "Slug": "Dog"
+   },
+   { 
+      "Name":"mongrel",
+      "Glyph":"c",
+      "Colour": "Orange",
+      "Attacks":[  
+         {  
+            "Verb":"bite[s]",
+            "BaseDamage":6.0,
+            "Element":0
+         }
+      ],
+      "MaxHealth":28,
+      "Tracking":20,
+      "Meander":3,
+      "Speed":0,
+      "Drop":[  
+            {  
+               "Chance":20,
+               "Name":"Fur Pelt"
+            }
+         ],
+      "Flags":["few"],
+      "Slug": "Dog"
+   },
+   { 
+      "Name":"butterfly",
+      "Glyph":"f",
+      "Colour": "LightPurple",
+      "Attacks":[  
+         {  
+            "Verb":"tickle[s] on",
+            "BaseDamage":1.0,
+            "Element":0
+         }
+      ],
+      "MaxHealth":1,
+      "Tracking":5,
+      "Meander":8,
+      "Speed":2,
+      "Drop":[  
+            {  
+               "Chance":20,
+               "Name":"Insect Wing"
+            }
+         ],
+      "Flags":["few","fearless"]
+   },
+   { 
+      "Name":"bee",
+      "Glyph":"f",
+      "Colour": "Yellow",
+      "Attacks":[  
+         {  
+            "Verb":"sting[s]",
+            "BaseDamage":2.0,
+            "Element":0
+         }
+      ],
+      "MaxHealth":1,
+      "Tracking":5,
+      "Meander":8,
+      "Speed":1,
+      "Drop":[],
+      "Flags":[  
+         "group",
+         "protective"
+      ]
+   },
+   { 
+      "Name":"wasp",
+      "Glyph":"f",
+      "Colour": "Brown",
+      "Attacks":[  
+         {  
+            "Verb":"sting[s]",
+            "BaseDamage":2.0,
+            "Element":8
+         }
+      ],
+      "MaxHealth":1,
+      "Tracking":5,
+      "Meander":8,
+      "Speed":2,
+      "Drop":[  
+            {  
+               "Chance":30,
+               "Name":"Stinger"
+            }
+         ],
+      "Flags":[  
+         "berzerk"
+      ]
+   },
+   { 
+      "Name":"field mouse",
+      "Glyph":"f",
+      "Colour": "LightBrown",
+      "Attacks":[  
+         {  
+            "Verb":"bite[s]",
+            "BaseDamage":3.0,
+            "Element":0
+         },
+         {  
+            "Verb":"scratch[es]",
+            "BaseDamage":2.0,
+            "Element":0
+         }
+      ],
+      "MaxHealth":3,
+      "Tracking":10,
+      "Meander":4,
+      "Speed":1,
+      "Drop":[],
+      "Flags":[]
+   },
+   { 
+      "Name":"fuzzy bunny",
+      "Glyph":"f",
+      "Colour": "LightBlue",
+      "Attacks":[  
+         {  
+            "Verb":"bite[s]",
+            "BaseDamage":5.0,
+            "Element":0
+         },
+         {  
+            "Verb":"kick[s]",
+            "BaseDamage":4.0,
+            "Element":0
+         }
+      ],
+      "MaxHealth":14,
+      "Tracking":10,
+      "Meander":2,
+      "Speed":0,
+      "Drop":[],
+      "Flags":[]
+   },
+   { 
+      "Name":"vole",
+      "Glyph":"f",
+      "Colour": "Gray",
+      "Attacks":[  
+         {  
+            "Verb":"bite[s]",
+            "BaseDamage":4.0,
+            "Element":0
+         }
+      ],
+      "MaxHealth":5,
+      "Tracking":10,
+      "Meander":4,
+      "Speed":1,
+      "Drop":[],
+      "Flags":[]
+   },
+   { 
+      "Name":"white mouse",
+      "Glyph":"f",
+      "Colour": "White",
+      "Attacks":[  
+         {  
+            "Verb":"bite[s]",
+            "BaseDamage":5.0,
+            "Element":0
+         },
+         {  
+            "Verb":"scratch[es]",
+            "BaseDamage":3.0,
+            "Element":0
+         }
+      ],
+      "MaxHealth":6,
+      "Tracking":10,
+      "Meander":4,
+      "Speed":1,
+      "Drop":[],
+      "Flags":[]
+   },
+   { 
+      "Name":"sewer rat",
+      "Glyph":"f",
+      "Colour": "DarkGray",
+      "Attacks":[  
+         {  
+            "Verb":"bite[s]",
+            "BaseDamage":4.0,
+            "Element":0
+         },
+         {  
+            "Verb":"scratch[es]",
+            "BaseDamage":3.0,
+            "Element":0
+         }
+      ],
+      "MaxHealth":7,
+      "Tracking":10,
+      "Meander":3,
+      "Speed":1,
+      "Drop":[],
+      "Flags":["group"]
+   },
+   { 
+      "Name":"plague rat",
+      "Glyph":"f",
+      "Colour": "DarkGreen",
+      "Attacks":[  
+         {  
+            "Verb":"bite[s]",
+            "BaseDamage":4.0,
+            "Element":8
+         },
+         {  
+            "Verb":"scratch[es]",
+            "BaseDamage":3.0,
+            "Element":0
+         }
+      ],
+      "MaxHealth":7,
+      "Tracking":10,
+      "Meander":4,
+      "Speed":1,
+      "Drop":[],
+      "Flags":["group"]
+   },
+   { 
+      "Name":"frog",
+      "Glyph":"R",
+      "Colour": "Green",
+      "Attacks":[  
+         {  
+            "Verb":"hop[s] on",
+            "BaseDamage":2.0,
+            "Element":0
+         }
+      ],
+      "MaxHealth":4,
+      "Tracking":10,
+      "Meander":4,
+      "Speed":1,
+      "Drop":[],
+      "Flags":[],
+      "Slug": "frog"
+   },
+   { 
+      "Name":"lizard guard",
+      "Glyph":"R",
+      "Colour": "Yellow",
+      "Attacks":[  
+         {  
+            "Verb":"claw[s]",
+            "BaseDamage":8.0,
+            "Element":0
+         },
+         {  
+            "Verb":"bite[s]",
+            "BaseDamage":10.0,
+            "Element":0
+         }
+      ],
+      "MaxHealth":26,
+      "Tracking":10,
+      "Meander":1,
+      "Speed":0,
+      "Drop":[],
+      "Flags":[ "fearless"  ]
+   },
+   { 
+      "Name":"lizard protector",
+      "Glyph":"R",
+      "Colour": "DarkYellow",
+      "Attacks":[  
+         {  
+            "Verb":"claw[s]",
+            "BaseDamage":10.0,
+            "Element":0
+         },
+         {  
+            "Verb":"bite[s]",
+            "BaseDamage":14.0,
+            "Element":0
+         }
+      ],
+      "MaxHealth":30,
+      "Tracking":10,
+      "Meander":1,
+      "Speed":0,
+      "Drop":[],
+      "Flags":[ "fearless"  ]
+   },
+   { 
+      "Name":"armored lizard",
+      "Glyph":"R",
+      "Colour": "Gray",
+      "Attacks":[  
+         {  
+            "Verb":"claw[s]",
+            "BaseDamage":10.0,
+            "Element":0
+         },
+         {  
+            "Verb":"bite[s]",
+            "BaseDamage":15.0,
+            "Element":0
+         }
+      ],
+      "MaxHealth":38,
+      "Tracking":10,
+      "Meander":1,
+      "Speed":0,
+      "Drop":[],
+      "Flags":[ "fearless"  ]
+   },
+   { 
+      "Name":"scaled guardian",
+      "Glyph":"R",
+      "Colour": "DarkGray",
+      "Attacks":[  
+         {  
+            "Verb":"claw[s]",
+            "BaseDamage":10.0,
+            "Element":0
+         },
+         {  
+            "Verb":"bite[s]",
+            "BaseDamage":15.0,
+            "Element":0
+         }
+      ],
+      "MaxHealth":50,
+      "Tracking":10,
+      "Meander":1,
+      "Speed":0,
+      "Drop":[],
+      "Flags":[ "fearless"  ]
+   },
+   { 
+      "Name":"saurian",
+      "Glyph":"R",
+      "Colour": "Orange",
+      "Attacks":[  
+         {  
+            "Verb":"claw[s]",
+            "BaseDamage":12.0,
+            "Element":0
+         },
+         {  
+            "Verb":"bite[s]",
+            "BaseDamage":17.0,
+            "Element":0
+         }
+      ],
+      "MaxHealth":64,
+      "Tracking":10,
+      "Meander":1,
+      "Speed":0,
+      "Drop":[],
+      "Flags":[ "fearless"  ]
+   },
+   { 
+      "Name":"juvenile salamander",
+      "Glyph":"R",
+      "Colour": "LightRed",
+      "Attacks":[  
+         {  
+            "Verb":"bite[s]",
+            "BaseDamage":12.0,
+            "Element":3
+         }
+      ],
+      "Moves":[  
+         {  
+         		"Type": "fireCone",
+            "Rate":16.0,
+            "Damage": 18.0,
+            "Range":6
+         }
+      ],
+      "MaxHealth":24,
+      "Tracking":10,
+      "Meander":3,
+      "Speed":0,
+      "Drop":[],
+      "Flags":[]
+   },
+   { 
+      "Name":"salamander",
+      "Glyph":"R",
+      "Colour": "Red",
+      "Attacks":[  
+         {  
+            "Verb":"bite[s]",
+            "BaseDamage":16.0,
+            "Element":3
+         }
+      ],
+      "Moves":[  
+         {  
+         		"Type": "fireCone",
+            "Rate":16.0,
+            "Damage": 24.0,
+            "Range":8
+         }
+      ],
+      "MaxHealth":40,
+      "Tracking":10,
+      "Meander":3,
+      "Speed":0,
+      "Drop":[],
+      "Flags":[]
+   },
+   { 
+      "Name":"slug",
+      "Glyph":"s",
+      "Colour": "DarkYellow",
+      "Attacks":[  
+         {  
+            "Verb":"crawl[s] on",
+            "BaseDamage":3.0,
+            "Element":0
+         }
+      ],
+      "MaxHealth":6,
+      "Tracking":2,
+      "Meander":1,
+      "Speed":-3,
+      "Drop":[],
+      "Flags":[ "fearless"  ]
+   },
+   { 
+      "Name":"giantslug",
+      "Glyph":"s",
+      "Colour": "Green",
+      "Attacks":[  
+         {  
+            "Verb":"crawl[s] on",
+            "BaseDamage":7.0,
+            "Element":8
+         }
+      ],
+      "MaxHealth":20,
+      "Tracking":2,
+      "Meander":1,
+      "Speed":-3,
+      "Drop":[],
+      "Flags":[ "fearless"  ]
+   },
+   { 
+      "Name":"garter snake",
+      "Glyph":"S",
+      "Colour": "Gold",
+      "Attacks":[  
+         {  
+            "Verb":"bite[s]",
+            "BaseDamage":1.0,
+            "Element":0
+         }
+      ],
+      "MaxHealth":7,
+      "Tracking":10,
+      "Meander":4,
+      "Speed":0,
+      "Drop":[],
+      "Flags":[],
+      "Slug": "Snake_Giant"
+   },
+   { 
+      "Name":"tree snake",
+      "Glyph":"S",
+      "Colour": "LightGreen",
+      "Attacks":[  
+         {  
+            "Verb":"bite[s]",
+            "BaseDamage":4.0,
+            "Element":0
+         }
+      ],
+      "MaxHealth":14,
+      "Tracking":10,
+      "Meander":4,
+      "Speed":0,
+      "Drop":[],
+      "Flags":[]
+   },
+   { 
+      "Name":"cave snake",
+      "Glyph":"S",
+      "Colour": "Gray",
+      "Attacks":[  
+         {  
+            "Verb":"bite[s]",
+            "BaseDamage":10.0,
+            "Element":0
+         }
+      ],
+      "MaxHealth":35,
+      "Tracking":10,
+      "Meander":4,
+      "Speed":0,
+      "Drop":[],
+      "Flags":[]
+   }
+]

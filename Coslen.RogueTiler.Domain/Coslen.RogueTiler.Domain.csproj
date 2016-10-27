@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EF0C6F27-AFD4-46D9-852A-A6406CA122D9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Coslen.RogueTiler.Domain</RootNamespace>
+    <AssemblyName>Coslen.RogueTiler.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Content\Factories\AffixFactory.cs" />
+    <Compile Include="Content\Factories\AreaFactory.cs" />
+    <Compile Include="Content\Factories\DropFactory.cs" />
+    <Compile Include="Content\Factories\ItemTypeFactory.cs" />
+    <Compile Include="Content\Factories\BreedFactory.cs" />
+    <Compile Include="Content\Factories\MoveFactory.cs" />
+    <Compile Include="Content\Factories\RecipeFactory.cs" />
+    <Compile Include="Content\Factories\ShopFactory.cs" />
+    <Compile Include="Engine\Actions\LanceAction.cs" />
+    <Compile Include="Engine\Actions\SlashAction.cs" />
+    <Compile Include="Engine\Actions\StabAction.cs" />
+    <Compile Include="Engine\AI\Fov.cs" />
+    <Compile Include="Engine\Common\Appearence.cs" />
+    <Compile Include="Engine\Common\ASCII.cs" />
+    <Compile Include="Engine\Common\Circle.cs" />
+    <Compile Include="Engine\Common\Direction.cs" />
+    <Compile Include="Engine\Common\Extensions.cs" />
+    <Compile Include="Engine\Common\Glyph.cs" />
+    <Compile Include="Engine\Common\Rect.cs" />
+    <Compile Include="Engine\Common\Rng.cs" />
+    <Compile Include="Engine\Common\Vector.cs" />
+    <Compile Include="Engine\Common\VectorBase.cs" />
+    <Compile Include="Content\Affixes.cs" />
+    <Compile Include="Content\GameConent.cs" />
+    <Compile Include="Content\Factories\TileTypeFactory.cs" />
+    <Compile Include="Engine\Entities\Conditions\ColdCondition.cs" />
+    <Compile Include="Engine\Entities\Conditions\DazzleCondition.cs" />
+    <Compile Include="Engine\Entities\Conditions\HasteCondition.cs" />
+    <Compile Include="Engine\Entities\Conditions\PoisonCondition.cs" />
+    <Compile Include="Engine\Entities\Conditions\ResistCondition.cs" />
+    <Compile Include="Engine\Entities\Heroes\Commands\DirectionCommand.cs" />
+    <Compile Include="Engine\Entities\Heroes\Peristance\HeroClassJson.cs" />
+    <Compile Include="Engine\Entities\Heroes\Peristance\HeroSaveFactory.cs" />
+    <Compile Include="Engine\Entities\Heroes\Peristance\HeroSaveJson.cs" />
+    <Compile Include="Engine\Entities\Heroes\Peristance\ItemAffixJson.cs" />
+    <Compile Include="Engine\Entities\Heroes\Peristance\ItemDataJson.cs" />
+    <Compile Include="Engine\Entities\Heroes\Peristance\StageJson.cs" />
+    <Compile Include="Engine\Entities\Heroes\Peristance\TrainedStatJson.cs" />
+    <Compile Include="Engine\Entities\MonsterFactory.cs" />
+    <Compile Include="Engine\Environment\Quest.cs" />
+    <Compile Include="Engine\Environment\QuestBuilder.cs" />
+    <Compile Include="Engine\Items\Affix.cs" />
+    <Compile Include="Engine\Items\Commands\DropItemCommand.cs" />
+    <Compile Include="Engine\Items\Commands\EquipItemCommand.cs" />
+    <Compile Include="Engine\Items\Commands\ItemCommand.cs" />
+    <Compile Include="Engine\Items\Commands\PickUpItemCommand.cs" />
+    <Compile Include="Engine\Items\Commands\TossItemCommand.cs" />
+    <Compile Include="Engine\Items\Commands\UseItemCommand.cs" />
+    <Compile Include="Engine\Items\Drop.cs" />
+    <Compile Include="Engine\Items\ItemLocations.cs" />
+    <Compile Include="Engine\Items\ItemType.cs" />
+    <Compile Include="Engine\Items\Recipe.cs" />
+    <Compile Include="Engine\Items\Shop.cs" />
+    <Compile Include="Engine\Logging\LogType.cs" />
+    <Compile Include="Engine\Logging\Message.cs" />
+    <Compile Include="Engine\Logging\Noun.cs" />
+    <Compile Include="Engine\Logging\Pronoun.cs" />
+    <Compile Include="Engine\Logging\Quantifiable.cs" />
+    <Compile Include="Engine\Logging\Quantity.cs" />
+    <Compile Include="Engine\Quests\FloorItemQuestBuilder.cs" />
+    <Compile Include="Engine\Quests\ItemQuest.cs" />
+    <Compile Include="Engine\Quests\MonsterQuest.cs" />
+    <Compile Include="Engine\Quests\MonsterQuestBuilder.cs" />
+    <Compile Include="Engine\Quests\TileQuest.cs" />
+    <Compile Include="Engine\Quests\TileQuestBuilder.cs" />
+    <Compile Include="Engine\StageBuilders\Arena.cs" />
+    <Compile Include="Engine\StageBuilders\DungeonBuilder.cs" />
+    <Compile Include="Engine\StageBuilders\DungeonNoMaze.cs" />
+    <Compile Include="Engine\StageBuilders\Dungeon4FactionNoMaze.cs" />
+    <Compile Include="Engine\StageBuilders\DungeonWithMaze.cs" />
+    <Compile Include="Engine\StageBuilders\Dungeon2FactionWithMaze.cs" />
+    <Compile Include="Engine\StageBuilders\Forrest.cs" />
+    <Compile Include="Engine\StageBuilders\Dungeon2FactionNoMaze.cs" />
+    <Compile Include="Engine\StageBuilders\Dungeon4FactionWithMaze.cs" />
+    <Compile Include="Engine\StageBuilders\Dungeon.cs" />
+    <Compile Include="Engine\Actions\Action.cs" />
+    <Compile Include="Engine\Actions\ActionFactory.cs" />
+    <Compile Include="Engine\Actions\AttackAction.cs" />
+    <Compile Include="Engine\Actions\BoltAction.cs" />
+    <Compile Include="Engine\Actions\CloseDoorAction.cs" />
+    <Compile Include="Engine\Actions\Condition.cs" />
+    <Compile Include="Engine\Actions\DetectItems.cs" />
+    <Compile Include="Engine\Actions\ElementActions.cs" />
+    <Compile Include="Engine\Actions\FuryAction.cs" />
+    <Compile Include="Engine\Actions\HealAction.cs" />
+    <Compile Include="Engine\Actions\HowlAction.cs" />
+    <Compile Include="Engine\Actions\InsultAction.cs" />
+    <Compile Include="Engine\Actions\ItemAction.cs" />
+    <Compile Include="Engine\Actions\LevelDownAction.cs" />
+    <Compile Include="Engine\Actions\LevelUpAction.cs" />
+    <Compile Include="Engine\Actions\LosAction.cs" />
+    <Compile Include="Engine\Actions\OpenDoorAction.cs" />
+    <Compile Include="Engine\Actions\RayAction.cs" />
+    <Compile Include="Engine\Actions\RestAction.cs" />
+    <Compile Include="Engine\Actions\RingSelfAction.cs" />
+    <Compile Include="Engine\Actions\SpawnAction.cs" />
+    <Compile Include="Engine\Actions\TeleportAction.cs" />
+    <Compile Include="Engine\Actions\TossAction.cs" />
+    <Compile Include="Engine\Actions\WalkAction.cs" />
+    <Compile Include="Engine\Entities\Actor.cs" />
+    <Compile Include="Engine\AI\AStar.cs" />
+    <Compile Include="Engine\AI\Flow.cs" />
+    <Compile Include="Engine\AI\MonsterState.cs" />
+    <Compile Include="Engine\AI\Move.cs" />
+    <Compile Include="Engine\Environment\Area.cs" />
+    <Compile Include="Engine\Attack.cs" />
+    <Compile Include="Engine\Entities\Breed.cs" />
+    <Compile Include="Engine\Entities\Heroes\Commands\ArcheryCommand.cs" />
+    <Compile Include="Engine\Entities\Heroes\Commands\LanceCommand.cs" />
+    <Compile Include="Engine\Entities\Heroes\Commands\SlashCommand.cs" />
+    <Compile Include="Engine\Entities\Heroes\Commands\StabCommand.cs" />
+    <Compile Include="Engine\Entities\Conditions\Condition.cs" />
+    <Compile Include="Engine\Content.cs" />
+    <Compile Include="Engine\ElementEnum.cs" />
+    <Compile Include="Engine\Energy.cs" />
+    <Compile Include="Engine\Events\Event.cs" />
+    <Compile Include="Engine\Events\EventType.cs" />
+    <Compile Include="Engine\Game.cs" />
+    <Compile Include="Engine\GameResult.cs" />
+    <Compile Include="Engine\Entities\Heroes\Behaviors\ActionBehavior.cs" />
+    <Compile Include="Engine\Entities\Heroes\Behaviors\Behavior.cs" />
+    <Compile Include="Engine\Entities\Heroes\Classes\Warrior.cs" />
+    <Compile Include="Engine\Entities\Heroes\Commands\Command.cs" />
+    <Compile Include="Engine\Entities\Heroes\Hero.cs" />
+    <Compile Include="Engine\Entities\Heroes\HeroClass.cs" />
+    <Compile Include="Engine\Entities\Heroes\Peristance\HeroSave.cs" />
+    <Compile Include="Engine\Entities\Heroes\LevelUtilties.cs" />
+    <Compile Include="Engine\Entities\Heroes\Behaviors\RestBehavior.cs" />
+    <Compile Include="Engine\Entities\Heroes\Behaviors\RunBehavior.cs" />
+    <Compile Include="Engine\Entities\Heroes\Commands\TargetCommand.cs" />
+    <Compile Include="Engine\Items\AllOfDrop.cs" />
+    <Compile Include="Engine\Items\CategoryDrop.cs" />
+    <Compile Include="Engine\Items\DropFactory.cs" />
+    <Compile Include="Engine\Items\Drops.cs" />
+    <Compile Include="Engine\Items\Equipment.cs" />
+    <Compile Include="Engine\Items\Inventory.cs" />
+    <Compile Include="Engine\Items\Item.cs" />
+    <Compile Include="Engine\Items\ItemDrop.cs" />
+    <Compile Include="Engine\Items\ItemLocation.cs" />
+    <Compile Include="Engine\Items\PercentDrop.cs" />
+    <Compile Include="Engine\Items\Rarity.cs" />
+    <Compile Include="Engine\Items\RarityDrop.cs" />
+    <Compile Include="Engine\Items\RepeatDrop.cs" />
+    <Compile Include="Engine\Environment\Level.cs" />
+    <Compile Include="Engine\Logging\Log.cs" />
+    <Compile Include="Engine\AI\Los.cs" />
+    <Compile Include="Engine\Entities\Monster.cs" />
+    <Compile Include="Engine\Option.cs" />
+    <Compile Include="Engine\Environment\Shadow.cs" />
+    <Compile Include="Engine\Environment\ShadowCaster.cs" />
+    <Compile Include="Engine\Environment\Stage.cs" />
+    <Compile Include="Engine\StageBuilders\GoblinStronghold.cs" />
+    <Compile Include="Engine\StageBuilders\RoomDecorator.cs" />
+    <Compile Include="Engine\StageBuilders\StageBuilder.cs" />
+    <Compile Include="Engine\Common\Stat.cs" />
+    <Compile Include="Engine\Entities\Thing.cs" />
+    <Compile Include="Engine\Environment\Tile.cs" />
+    <Compile Include="Engine\Environment\TileType.cs" />
+    <Compile Include="Engine\StageBuilders\StageFactory.cs" />
+    <Compile Include="Engine\StageBuilders\TrainingGrounds.cs" />
+    <Compile Include="Engine\TrainedStat.cs" />
+    <Compile Include="Engine\GameState.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StageNotFoundExpection.cs" />
+    <Compile Include="UIConnector\EventData.cs" />
+    <Compile Include="UIConnector\EventDelegates.cs" />
+    <Compile Include="UIConnector\EventHub.cs" />
+    <Compile Include="Utilities\Configuration\RogueTilerSettings.cs" />
+    <Compile Include="Utilities\GamePathUtilities.cs" />
+    <Compile Include="Utilities\Debugger.cs" />
+    <Compile Include="Utilities\IntExtensions.cs" />
+    <Compile Include="Engine\Logging\PronounEnums.cs" />
+    <Compile Include="Utilities\DictionaryExtensions.cs" />
+    <Compile Include="Utilities\ListExtensions.cs" />
+    <Compile Include="Utilities\Storage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

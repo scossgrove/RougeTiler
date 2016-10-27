@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C8F6A5AB-9E71-44D8-927C-712E03546CC5}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Coslen.RogueTiler.Win</RootNamespace>
+    <AssemblyName>Coslen.RogueTiler.Win</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameControlEnum.cs" />
+    <Compile Include="UI\GameVictory\GameVictoryLayout.cs" />
+    <Compile Include="UI\GameVictory\GameVictoryScreen.cs" />
+    <Compile Include="UI\GameVictory\GameVictoryScreenSection.cs" />
+    <Compile Include="UI\InGame\Dialogs\ConsoleDialog.cs" />
+    <Compile Include="UI\InGame\Dialogs\StorageDialog.cs" />
+    <Compile Include="UI\InGame\Dialogs\TargetDialog.cs" />
+    <Compile Include="UI\InGame\Dialogs\SelectCommandDialog.cs" />
+    <Compile Include="UI\InGame\Dialogs\ForfeitDialog.cs" />
+    <Compile Include="UI\InGame\Dialogs\DirectionDialog.cs" />
+    <Compile Include="UI\InGame\Dialogs\HeroStatisicsDialog.cs" />
+    <Compile Include="UI\InGame\Dialogs\CloseDoorDialog.cs" />
+    <Compile Include="UI\InGame\Helpers\InputConstants.cs" />
+    <Compile Include="UI\InGame\Helpers\InputUtilities.cs" />
+    <Compile Include="UI\InGame\InGameScreen.cs" />
+    <Compile Include="UI\InGame\HeroStatisticsScreenSection.cs" />
+    <Compile Include="UI\InGame\VisibleActorsScreenSection.cs" />
+    <Compile Include="UI\GameOver\GameOverLayout.cs" />
+    <Compile Include="UI\GameOver\GameOverScreen.cs" />
+    <Compile Include="UI\GameOver\GameOverScreenSection.cs" />
+    <Compile Include="UI\InMainMenu\MainMenuScreen.cs" />
+    <Compile Include="UI\DialogBase.cs" />
+    <Compile Include="UI\InGame\Dialogs\ItemDialog.cs" />
+    <Compile Include="UI\CommonDialogs\ConfirmDialog.cs" />
+    <Compile Include="UI\InMainMenu\MainMenuLayout.cs" />
+    <Compile Include="UI\InMainMenu\MainMenuScreenSection.cs" />
+    <Compile Include="UI\IScreenSection.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\NewPlayer\NewPlayerScreen.cs" />
+    <Compile Include="UI\NewPlayer\NewPlayerLayout.cs" />
+    <Compile Include="UI\NewPlayer\NewPlayerScreenSection.cs" />
+    <Compile Include="UI\ScreenBase.cs" />
+    <Compile Include="UI\ScreenLayoutBase.cs" />
+    <Compile Include="UI\ScreenSectionBase.cs" />
+    <Compile Include="UI\InGame\GameBoardScreenSection.cs" />
+    <Compile Include="UI\InGame\InGameLayout.cs" />
+    <Compile Include="UI\TextListScreenSection.cs" />
+    <Compile Include="Utilities\BufferUtilities\Buffer.cs" />
+    <Compile Include="Utilities\BufferUtilities\BufferRender.cs" />
+    <Compile Include="Utilities\BufferUtilities\BufferStructures.cs" />
+    <Compile Include="Utilities\ColourUtilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="App_Data\heroes.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="App_Data\StreamingAssets\Content\areas.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="App_Data\StreamingAssets\Content\breeds.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="App_Data\StreamingAssets\Content\items.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Coslen.RogueTiler.Domain\Coslen.RogueTiler.Domain.csproj">
+      <Project>{ef0c6f27-afd4-46d9-852a-a6406ca122d9}</Project>
+      <Name>Coslen.RogueTiler.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\RogueTiler.log">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

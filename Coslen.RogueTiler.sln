@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coslen.RogueTiler.Win", "Coslen.RogueTiler.Win\Coslen.RogueTiler.Win.csproj", "{C8F6A5AB-9E71-44D8-927C-712E03546CC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coslen.RogueTiler.Domain", "Coslen.RogueTiler.Domain\Coslen.RogueTiler.Domain.csproj", "{EF0C6F27-AFD4-46D9-852A-A6406CA122D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. Testing Projects", "03. Testing Projects", "{31C35473-8B9B-44EA-AB4B-5C5A8A22659E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Game Projects", "02. Game Projects", "{096E4C53-2CE4-4348-8209-42BFF63D471B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coslen.RogueTiler.Domain.StageBuilderTester", "Coslen.RogueTiler.Domain.StageBuilderTester\Coslen.RogueTiler.Domain.StageBuilderTester.csproj", "{6BA3A054-B506-43A0-BD3E-C55685426C3B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. Utility Projects", "01. Utility Projects", "{3EA37953-544B-4661-AB5A-E54ABB139DA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coslen.RogueTiler.ConsoleInputTester", "Coslen.RogueTiler.ConsoleInputTester\Coslen.RogueTiler.ConsoleInputTester.csproj", "{EAA09397-94F2-4281-95F1-63F055E782E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8F6A5AB-9E71-44D8-927C-712E03546CC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8F6A5AB-9E71-44D8-927C-712E03546CC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8F6A5AB-9E71-44D8-927C-712E03546CC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8F6A5AB-9E71-44D8-927C-712E03546CC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF0C6F27-AFD4-46D9-852A-A6406CA122D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF0C6F27-AFD4-46D9-852A-A6406CA122D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF0C6F27-AFD4-46D9-852A-A6406CA122D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF0C6F27-AFD4-46D9-852A-A6406CA122D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BA3A054-B506-43A0-BD3E-C55685426C3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BA3A054-B506-43A0-BD3E-C55685426C3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BA3A054-B506-43A0-BD3E-C55685426C3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BA3A054-B506-43A0-BD3E-C55685426C3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAA09397-94F2-4281-95F1-63F055E782E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAA09397-94F2-4281-95F1-63F055E782E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAA09397-94F2-4281-95F1-63F055E782E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAA09397-94F2-4281-95F1-63F055E782E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C8F6A5AB-9E71-44D8-927C-712E03546CC5} = {096E4C53-2CE4-4348-8209-42BFF63D471B}
+		{EF0C6F27-AFD4-46D9-852A-A6406CA122D9} = {096E4C53-2CE4-4348-8209-42BFF63D471B}
+		{6BA3A054-B506-43A0-BD3E-C55685426C3B} = {31C35473-8B9B-44EA-AB4B-5C5A8A22659E}
+		{EAA09397-94F2-4281-95F1-63F055E782E6} = {31C35473-8B9B-44EA-AB4B-5C5A8A22659E}
+	EndGlobalSection
+EndGlobal

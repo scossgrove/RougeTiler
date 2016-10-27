@@ -1,0 +1,107 @@
+{
+    "GameLevels":[
+        {
+            "GameLevel":1,
+            "AreaName":"lower cells",
+            "AreaLevel":0
+        },
+        {
+            "GameLevel":2,
+            "AreaName":"lower cells",
+            "AreaLevel":1
+        },
+        {
+            "GameLevel":3,
+            "AreaName":"lower cells",
+            "AreaLevel":2
+        }
+    ],
+    "Areas":[
+        {
+            "Name":"lower cells",
+            "Width":81,
+            "Height": 71,
+            "Abundance":1.0,
+            "Levels":[
+                {
+                    "Level":1,
+                    "BuilderType":"Dungeon",
+                    "Monsters":10,
+                    "Items":10,
+                    "Breeds":[
+                        "field mouse",
+                        "slug"
+                    ],
+                    "Rarities":[
+                        {
+                            "Rarity":1,
+                            "Item":"Rock"
+                        },
+                        {
+                            "Rarity":1,
+                            "Item":"treasure",
+                            "Level":1
+                        },
+                        {
+                            "Rarity": 1,
+                            "Item": "Stick"
+                        },
+                        {
+                            "Rarity": 1,
+                            "Item": "Soothing Balm"
+                        }
+
+                    ]
+                },
+                {
+                    "Level":2,
+                    "BuilderType":"Dungeon",
+                    "Monsters":15,
+                    "Items":3,
+                    "Breeds":[
+                        "field mouse"
+                    ],
+                    "Rarities":[
+                        {
+                            "Rarity":1,
+                            "Item":"Rock"
+                        },
+                        {
+                            "Rarity":1,
+                            "Item":"treasure",
+                            "Level":1
+                        },
+                        {
+                            "Rarity":1,
+                            "Item":"Stick"
+                        }
+                    ]
+                },
+                {
+                    "Level":3,
+                    "BuilderType":"Dungeon",
+                    "Monsters":20,
+                    "Items":3,
+                    "Breeds":[
+                        "field mouse"
+                    ],
+                    "Rarities":[
+                        {
+                            "Rarity":1,
+                            "Item":"Rock"
+                        },
+                        {
+                            "Rarity":1,
+                            "Item":"treasure",
+                            "Level":1
+                        },
+                        {
+                            "Rarity":1,
+                            "Item":"Stick"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

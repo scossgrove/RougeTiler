@@ -1,0 +1,214 @@
+[
+  {
+    "Name": "Brunhild",
+    "Inventory": [
+      {
+        "ItemType": "Rapier",
+        "Prefix": {
+          "Name": null,
+          "AttackData": null
+        },
+        "Suffix": {
+          "Name": null,
+          "AttackData": null
+        },
+        "Position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "ItemType": "Knife",
+        "Prefix": {
+          "Name": null,
+          "AttackData": null
+        },
+        "Suffix": {
+          "Name": null,
+          "AttackData": null
+        },
+        "Position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "ItemType": "Pointed Stick",
+        "Prefix": {
+          "Name": null,
+          "AttackData": null
+        },
+        "Suffix": {
+          "Name": null,
+          "AttackData": null
+        },
+        "Position": {
+          "x": 12,
+          "y": 6
+        }
+      },
+      {
+        "ItemType": "Cloak",
+        "Prefix": {
+          "Name": null,
+          "AttackData": null
+        },
+        "Suffix": {
+          "Name": null,
+          "AttackData": null
+        },
+        "Position": {
+          "x": 12,
+          "y": 6
+        }
+      },
+      {
+        "ItemType": "Cloth Shirt",
+        "Prefix": {
+          "Name": null,
+          "AttackData": null
+        },
+        "Suffix": {
+          "Name": null,
+          "AttackData": null
+        },
+        "Position": {
+          "x": 12,
+          "y": 6
+        }
+      },
+      {
+        "ItemType": "Leather Sandals",
+        "Prefix": {
+          "Name": null,
+          "AttackData": null
+        },
+        "Suffix": {
+          "Name": null,
+          "AttackData": null
+        },
+        "Position": {
+          "x": 12,
+          "y": 6
+        }
+      }
+    ],
+    "Equipment": [
+      {
+        "ItemType": "Stick",
+        "Prefix": {
+          "Name": null,
+          "AttackData": null
+        },
+        "Suffix": {
+          "Name": null,
+          "AttackData": null
+        },
+        "Position": {
+          "x": 7,
+          "y": 7
+        }
+      },
+      {
+        "ItemType": null,
+        "Prefix": null,
+        "Suffix": null,
+        "Position": null
+      },
+      {
+        "ItemType": null,
+        "Prefix": null,
+        "Suffix": null,
+        "Position": null
+      },
+      {
+        "ItemType": null,
+        "Prefix": null,
+        "Suffix": null,
+        "Position": null
+      },
+      {
+        "ItemType": null,
+        "Prefix": null,
+        "Suffix": null,
+        "Position": null
+      },
+      {
+        "ItemType": null,
+        "Prefix": null,
+        "Suffix": null,
+        "Position": null
+      },
+      {
+        "ItemType": null,
+        "Prefix": null,
+        "Suffix": null,
+        "Position": null
+      },
+      {
+        "ItemType": null,
+        "Prefix": null,
+        "Suffix": null,
+        "Position": null
+      },
+      {
+        "ItemType": null,
+        "Prefix": null,
+        "Suffix": null,
+        "Position": null
+      },
+      {
+        "ItemType": null,
+        "Prefix": null,
+        "Suffix": null,
+        "Position": null
+      }
+    ],
+    "HeroClass": {
+      "Name": "Warrior",
+      "Properties": [
+        {
+          "Name": "Fighting",
+          "Count": 0
+        },
+        {
+          "Name": "Combat",
+          "Count": 21
+        },
+        {
+          "Name": "Toughness",
+          "Count": 180
+        }
+      ],
+      "Masteries": [
+        {
+          "Name": "club",
+          "Count": 21
+        }
+      ]
+    },
+    "Stages": [
+    ],
+    "Properties": {
+      "Name": "Brunhild",
+      "Position": {
+        "x": 29,
+        "y": 14
+      },
+      "ExperienceCents": 0,
+      "Gold": 60,
+      "Food": 52.0,
+      "Charge": {
+        "Current": 0.0,
+        "Max": 20.0,
+        "IsMax": false
+      },
+      "Health": {
+        "Current": 62.0,
+        "Max": 62.0,
+        "IsMax": true
+      },
+      "CurrentStage": 0
+    }
+  }
+]
